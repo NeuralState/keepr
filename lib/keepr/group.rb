@@ -24,7 +24,7 @@ class Keepr::Group < ActiveRecord::Base
       Keepr::Posting
         .joins(:keepr_account)
         .where(keepr_accounts: { kind: [
-                 Keepr::Account.kinds[:revenue],
+                 Keepr::Account.kinds[:equity],
                  Keepr::Account.kinds[:expense]
                ] })
     else

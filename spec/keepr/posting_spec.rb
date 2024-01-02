@@ -111,7 +111,7 @@ describe Keepr::Posting do
 
   describe 'cost_center handling' do
     let!(:cost_center) { FactoryBot.create(:cost_center) }
-    let!(:account_8400) { FactoryBot.create(:account, number: 8400, kind: :revenue) }
+    let!(:account_8400) { FactoryBot.create(:account, number: 8400, kind: :equity) }
 
     it 'should allow cost_center' do
       posting = Keepr::Posting.new keepr_account: account_8400, amount: 100, keepr_cost_center: cost_center

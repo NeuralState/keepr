@@ -244,7 +244,7 @@ describe Keepr::Account, 'with tax' do
   it 'should link to tax' do
     account = Keepr::Account.new number: 8400,
                                  name: 'Erlöse 19% USt',
-                                 kind: :revenue,
+                                 kind: :rquity,
                                  keepr_tax: tax
     expect(account).to be_valid
   end

@@ -13,7 +13,7 @@ describe Keepr::JournalExport do
   let(:account_1600)  { FactoryBot.create :account, number: 1600, kind: :liability }
   let(:account_1718)  { FactoryBot.create :account, number: 1718, kind: :liability, keepr_tax: ust }
   let(:account_4920)  { FactoryBot.create :account, number: 4920, kind: :expense,   keepr_tax: vst }
-  let(:account_8400)  { FactoryBot.create :account, number: 8400, kind: :revenue,   keepr_tax: ust }
+  let(:account_8400)  { FactoryBot.create :account, number: 8400, kind: :equity,   keepr_tax: ust }
 
   let(:account_10000) { FactoryBot.create :account, number: 10_000, kind: :debtor }
 

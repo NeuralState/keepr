@@ -19,7 +19,7 @@ describe Keepr::Tax do
   let!(:account) do
     Keepr::Account.create! number: 8400,
                            name: 'Erlöse 19% USt',
-                           kind: :revenue,
+                           kind: :equity,
                            keepr_tax: tax
   end
 

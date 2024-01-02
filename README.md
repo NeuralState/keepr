@@ -56,7 +56,7 @@ principles. To create an account, use the following format:
 
 "kind" is one of following values:
 
-	[asset liability revenue expense forward debtor creditor]
+	[asset liability equity expense forward debtor creditor]
 
 Accounts can have "child" accounts. All entries posted in a child account will
 be shown in the "parent" account as well. To create a child account:
@@ -120,7 +120,7 @@ We can get an account balance as follows:
 	// Create a sale account that links to the tax account
 	account = Keepr::Account.new number: 8400,
                                  name: 'Erlöse 19% USt',
-                                 kind: :revenue,
+                                 kind: :equity,
                                  keepr_tax: tax
 
 

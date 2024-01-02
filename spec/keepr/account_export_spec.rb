@@ -6,7 +6,7 @@ describe Keepr::AccountExport do
   let!(:account_1000)  { FactoryBot.create :account, kind: :asset,     number:  1000,  name: 'Kasse'                     }
   let!(:account_1776)  { FactoryBot.create :account, kind: :liability, number:  1776,  name: 'Umsatzsteuer 19 %'         }
   let!(:account_4920)  { FactoryBot.create :account, kind: :expense,   number:  4920,  name: 'Telefon'                   }
-  let!(:account_8400)  { FactoryBot.create :account, kind: :revenue,   number:  8400,  name: 'Erlöse 19 %'               }
+  let!(:account_8400)  { FactoryBot.create :account, kind: :equity,   number:  8400,  name: 'Erlöse 19 %'               }
   let!(:account_9000)  { FactoryBot.create :account, kind: :forward,   number:  9000,  name: 'Saldenvorträge Sachkonten' }
   let!(:account_10000) { FactoryBot.create :account, kind: :creditor,  number: 10_000, name: 'Diverse Kreditoren'        }
   let!(:account_70000) { FactoryBot.create :account, kind: :debtor,    number: 70_000, name: 'Diverse Debitoren'         }

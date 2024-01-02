@@ -75,7 +75,7 @@ class Keepr::Posting < ActiveRecord::Base
     return unless keepr_cost_center
     return if keepr_account.profit_and_loss?
 
-    # allowed for expense or revenue accounts only
-    errors.add :keepr_cost_center_id, :allowed_for_expense_or_revenue_only
+    # allowed for expense or equity accounts only
+    errors.add :keepr_cost_center_id, :allowed_for_expense_or_equity_only
   end
 end

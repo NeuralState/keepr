@@ -61,7 +61,7 @@ describe Keepr::Group do
     let(:account_1b)  { FactoryBot.create :account, number: '0011', keepr_group: group_1_1_1 }
     let(:account_1c)  { FactoryBot.create :account, number: '0111', keepr_group: group_1_1_1 }
 
-    let(:account_2)   { FactoryBot.create :account, number: '8400', keepr_group: group_2, kind: :revenue }
+    let(:account_2)   { FactoryBot.create :account, number: '8400', keepr_group: group_2, kind: :equity }
 
     # Journals
     let!(:journal1)   do
